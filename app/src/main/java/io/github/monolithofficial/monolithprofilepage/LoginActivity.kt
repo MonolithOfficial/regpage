@@ -7,6 +7,10 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
@@ -20,6 +24,11 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun init(){
+
+
+
+
+
         readData()
         logInBtn.setOnClickListener {
             if (emailField.text.isNotEmpty() && passwordField.text.isNotEmpty()){
@@ -30,6 +39,9 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent)
         }
+
+
+
     }
 
     private fun logIn(){

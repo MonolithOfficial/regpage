@@ -39,6 +39,16 @@
             android:layout_height="wrap_content"
             android:hint="Enter your password"/>
 
+        <EditText
+            android:background="#9EFFFFFF"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:inputType="text"
+            android:id="@+id/messageField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your message"/>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -55,6 +65,15 @@
                 android:layout_gravity="center_horizontal"
                 android:text="LOG IN"
                 android:textColor="#fff"/>
+            <Button
+                android:id="@+id/sendBtn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#E66AFF00"
+                android:layout_margin="20dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Send message"
+                android:textColor="#FF0000"/>
 
             <Button
                 android:id="@+id/signUpBtn"
